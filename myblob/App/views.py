@@ -28,5 +28,6 @@ def get_request():
 
     #---------------------------------------------------------
     print(request.form)       #获取post请求的参数   ImmutableMultiDict([('name', 'aaa'), ('name', '王小二'), ('age', '90'), ('sex', 'nan')])     允许有重复的key
+    print(request.form.get('name'))                       #post获取参数     同get里面的   request.args.get('haha')  方法
     print(request.method)
     return "request is ok;"
