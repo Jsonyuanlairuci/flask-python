@@ -2,7 +2,7 @@
 
 # 蓝图   是一种规划，主要用来规划urls (路由route)
 from flask import Blueprint,request
-
+from .models import *
 
 
 blue=Blueprint('user',__name__)         #蓝图名称，后面坐反向解析使用·
